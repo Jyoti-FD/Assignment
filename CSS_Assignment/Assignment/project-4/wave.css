@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wave{
+    background: url(../project-4/img/black.png);
+    height: 100vh;
+    width: 100%;
+}
+.team h1{
+     color: aliceblue;
+     font-size: 30px;
+     padding-top: 80px;
+     text-align: center;
+}
+.team p{
+    color: aliceblue;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+    letter-spacing: 1px;
+}
+img[class*="jin"]{
+    position: absolute;
+    width: 60px;
+    border: 2px solid crimson;
+}
+.jin{
+   bottom: 180px;
+  right: 100px;
+    border-radius: 60px;
+}
+img[class*="jk"]{
+    position: absolute;
+    width: 40px;
+    border: 2px solid crimson;
+}
+.jk{
+   bottom: 130px;
+    border-radius: 70px;
+    right: 350px;
+
+}
+img[class*="rm"]{
+    position: absolute;
+    width: 40px;
+    border: 2px solid crimson;
+}
+.rm{
+   bottom: 210px;
+    border-radius: 50px;
+    right: 650px;
+
+}
+img[class*="suga"]{
+    position: absolute;
+    width: 40px;
+    border: 2px solid crimson;
+    background-blend-mode: darken;
+}
+.suga{
+    bottom: 205px;
+    border-radius: 50px;
+    left: 500px;
+}
+img[class*="v"]{
+    position: absolute;
+    width: 40px;
+    border: 2px solid crimson;
+}
+.v{
+    bottom: 90px;
+    border-radius: 50px;
+    left: 200px;
+}
+.svg{
+    stroke: crimson;
+    padding-top: 250px;
+}
+.svg img{
+    text-align: center;
+    width: 20px;
+}
+.vertical{
+    position: absolute;
+    top: 540px;
+    left: 520px;
+    height: 40px;
+    width: 2px;
+    background-color: gray;
+}
+.svg h1{
+font-size: 20px;
+color: crimson;
+letter-spacing: 2px;
+}

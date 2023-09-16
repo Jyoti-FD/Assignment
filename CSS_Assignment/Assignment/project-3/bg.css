@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display:flex ;
+}
+.col-33{
+    background-color: black;
+     width: 55%;
+}
+.col-33 h1{
+    color: aliceblue;
+    font-size: 30px;
+    text-align: end;
+    padding: 80px;
+    gap: 10px;
+}
+.col-33 h3{
+color: brown;
+font-size: 20px;
+text-align: end;
+padding-right: 80px;
+}
+.col-33 p{
+    color: aliceblue;
+    font: 10px;
+    text-align: end;
+    padding: 10px 80px;
+
+}
+img[class*="comp"]{
+    position: absolute;
+    width: 60px;
+}
+.comp{
+    top: 180px;
+    left: 790px;
+}
+img[class*="star"]{
+    position: absolute;
+    width: 60px;
+}
+.star{
+    top: 320px;
+    left: 790px;
+    border-radius: 50px;
+}
+img[class*="camera"]{
+    position: absolute;
+    width: 60px;
+}
+.camera{
+    top: 460px;
+    left: 790px;
+    border-radius: 50px;
+}

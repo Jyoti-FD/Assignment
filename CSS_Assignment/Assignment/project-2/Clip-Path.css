@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clip{
+    clip-path: polygon(53% 100%, 100% 85%, 100% 0, 0 0, 0 86%);
+    background: url(../project-2/image/tree.png);
+    height: 600px;
+}
+.logo img{
+    padding: 20px 0px 0px 90px;
+    height: 100px;
+    width: 230px;
+   border-radius: 20px;
+}
+nav{
+    font-size:20px ;
+    position: relative;
+    color: aliceblue;
+}
+nav, .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px ;
+    gap: 30px;
+}
+li{
+    list-style-type: none;
+    padding: 0px 0px 0px 50px;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.our h3{
+    font-size: 20px;
+    color: aliceblue;
+    letter-spacing: 2px;
+    padding: 50px;
+    text-align: center;
+}
+.our h1{
+    font-size: 50px;
+    color: aliceblue;
+    letter-spacing: 10px;
+    text-align: center;
+}
+.our h6{
+    padding: 50px;
+    text-align: center;
+    color: aliceblue;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+.btn{
+    text-align: center;
+    background-color: transparent;
+    color: aliceblue;
+}
+.one{
+    color: aliceblue;
+    background-color: crimson;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.two{
+    color: aliceblue;
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+img[class*="arrow"]{
+    position: absolute;
+    width: 50px;
+}
+.arrow{
+    bottom:111px ;
+    right: 700px;
+    background-color: transparent;
+    border-radius: 50px;
+}
+.last{
+    display: flex;
+}
+.vector{
+    margin-left: 100px;
+}
+.vector img{
+ width: 100px;
+ height: 100px;
+}
+.vector h1{
+    font-size: 20px;
+    color: darkblue;
+}
+.vector p{
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.heart{
+    margin-left: 100px;
+}
+.heart img{
+    width: 100px;
+    height: 100px;
+}
+.heart h2{
+    font-size: 20px;
+    color: darkblue;
+}
+.heart p{
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.light{
+    margin-left: 100px;
+}
+.light img{
+    width: 100px;
+    height: 100px;
+}
+.light h2{
+    font-size: 20px;
+    color: darkblue;
+}
+.light p{
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.lap{
+    margin-left: 100px;
+}
+.lap img{
+    width: 100px;
+    height: 100px;
+}
+.lap h2{
+    font-size: 20px;
+    color: darkblue;
+}
+.lap p{
+  font-size: 10px;
+  letter-spacing: 1px;
+}
