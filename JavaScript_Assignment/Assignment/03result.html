@@ -43,17 +43,17 @@
       const f = parseInt(document.getElementById("sub-6").value);
       const g = parseInt(document.getElementById("sub-7").value);
 
-      // Validation
+     
       if (
         a < 0 || a > 100 || b > 100 || c > 100 || d > 100 || e > 100 || f > 100 || g > 100) {
         alert("Please enter correct value.");
       }
 
-      // Compute total
+     
       const total = a + b + c + d + e + f + g;
       document.getElementById("total").innerText = total;
 
-      // Compute Percentage
+     
       const percentage = (total * 100) / 700;
       document.getElementById("percentage").innerText = percentage;
     }
