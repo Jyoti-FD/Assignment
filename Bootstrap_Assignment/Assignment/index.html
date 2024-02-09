@@ -1,234 +1,179 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap Practical</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        
+
+        <!-- custom CSS -->
+
+        <style>
+            .carousel-inner img{
+                height: 680px;
+            }
+            .bro{
+                background-color: dodgerblue;
+                color: white;
+                padding: 7px 20px 7px 20px;
+                border-radius: 5px;
+                text-decoration: none;
+            }
+            .display{
+                display: flex;
+                justify-content: space-around;
+            }
+            .card img{
+                height: 300px;
+                border-radius: 50%;
+            }
+            .card-body{
+                text-align: center;
+            }
+            .col-6 img{
+                height: 400px;
+                width: 600px;
+            }
+        </style>
 </head>
-<style>
-    .carousel-item {
-        height: 600px;
-    }
-
-    .carousel-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    p {
-        font-size: 18px;
-    }
-
-    .card-img {
-        width: 350px;
-        height: 350px;
-        border-radius: 50%;
-    }
-
-    .card-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-</style>
-
 <body>
-    <!-- header-section started here  -->
-    <header class="header-section">
-        <!-- nav-start  -->
-        <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand text-white" href="#">Mountains</a>
-                <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="text-white">X</span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item text-white" href="#">Action</a></li>
-                                <li><a class="dropdown-item text-white" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider text-white">
-                                </li>
-                                <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled text-white" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-        <!-- nav-end  -->
-        <!-- Carousel start  -->
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../Assignment/images/mountain-1.png" class="d-block w-100 img-fluid" alt="...">
-                    <div class="carousel-caption d-none d-md-block text-end">
-                        <h1>Lorem ipsum dolor, sit amet consectetur</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit harum impedit obcaecati
-                            aperiam delectus voluptas necessitatibus neque nihil saepe fuga. Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Ratione, tempore.</p>
-                        <a href="#" class="btn btn-primary">READ MORE</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="../Assignment/images/image1.jpeg" class="d-block w-100 img-fluid" alt="...">
-                    <div class="carousel-caption d-none d-md-block text-end">
-                        <h5>SLorem ipsum dolor, sit amet consectetur</h5>
-                        <p>SLorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit harum impedit obcaecati
-                            aperiam delectus voluptas necessitatibus neque nihil saepe fuga. Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Ratione, tempore.</p>
-                        <a href="#" class="btn btn-primary">READ MORE</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="../Assignment/images/image2.png" class="d-block w-100 img-fluid" alt="...">
-                    <div class="carousel-caption d-none d-md-block text-end">
-                        <h5>Lorem ipsum dolor, sit amet consectetur</h5>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit harum impedit obcaecati
-                            aperiam delectus voluptas necessitatibus neque nihil saepe fuga. Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Ratione, tempore.</p>
-                        <a href="#" class="btn btn-primary">READ MORE</a>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <!-- Carousel end  -->
-    </header>
-    <!-- header-section started here  -->
-    <!-- card-section started here  -->
-    <section class="card-section my-5">
-        <div class="container">
-            <div class="row justify-content-center ">
-                <!-- card-1  -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card justify-content-center align-items-center text-center">
-                        <div class="card-img overflow-hidden text-center">
-                            <img src="../Assignment/images/head-img1.png" class="img-fluid" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title">Title Here</h2>
-                            <p class="card-text">We are living in anxious times. The corporate slavery has turned us into panic-stricken stressed-out edgy beings lost in the maze of our fearful thoughts. </p>
-                            <a href="#" class="btn btn-dark">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- card-2  -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card justify-content-center align-items-center text-center">
-                        <div class="card-img overflow-hidden text-center">
-                            <img src="../Assignment/images/head-img2.png" class="img-fluid" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title">Title Here</h2>
-                            <p class="card-text">We are living in anxious times. The corporate slavery has turned us into panic-stricken stressed-out edgy beings lost in the maze of our fearful thoughts. </p>
-                            <a href="#" class="btn btn-dark">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- card-3  -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card justify-content-center align-items-center text-center">
-                        <div class="card-img overflow-hidden text-center">
-                            <img src="../Assignment/images/head-img3.png" class="img-fluid" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title">Title Here</h2>
-                            <p class="card-text">We are living in anxious times. The corporate slavery has turned us into panic-stricken stressed-out edgy beings lost in the maze of our fearful thoughts. </p>
-                            <a href="#" class="btn btn-dark">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- card-section end here  -->
 
-    <main id="main-section">
-        <section class="first-main">
-            <div class="container">
-                <div class="row align-items-center justify-content-center row-gap-3 py-3">
-                    <div class="col-12 col-lg-7  order-2 order-lg-1">
-                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolore quod quaerat
-                            pariatur adipisci repellendus.</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam error quas, veniam eaque,
-                            quidem quis repellat architecto, corporis aut totam perferendis distinctio. Corrupti
-                            excepturi saepe a laudantium, eos architecto? Facere.</p>
-                    </div>
-                    <div class="col-sm-8  col-12 col-lg-5 order-1 order-lg-2">
-                        <img src="../Assignment/images/img1.png" alt="image" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row align-items-center justify-content-center row-gap-3 py-3">
-                    <div class="col-12 col-lg-7  order-2">
-                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolore quod quaerat
-                            pariatur adipisci repellendus.</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam error quas, veniam eaque,
-                            quidem quis repellat architecto, corporis aut totam perferendis distinctio. Corrupti
-                            excepturi saepe a laudantium, eos architecto? Facere.</p>
-                    </div>
-                    <div class="col-sm-8 col-12 col-lg-5 order-1">
-                        <img src="../Assignment/images/img2.png" alt="image" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row align-items-center justify-content-center row-gap-3 py-3">
-                    <div class="col-12 col-lg-7  order-2 order-lg-1">
-                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolore quod quaerat
-                            pariatur adipisci repellendus.</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam error quas, veniam eaque,
-                            quidem quis repellat architecto, corporis aut totam perferendis distinctio. Corrupti
-                            excepturi saepe a laudantium, eos architecto? Facere.</p>
-                    </div>
-                    <div class="col-sm-8 col-12 col-lg-5 order-1 order-lg-2">
-                        <img src="../Assignment/images/img3.png" alt="image" class="img-fluid">
-                    </div>
-                </div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"  data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- slider -->
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="../Assignment/images/mountain-1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block" style="color: white; text-align: right;">
+              <h2>One more for good measure.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti maxime et deserunt eaque <br> tenetur totam, odit ipsa sunt facere ex asperiores pariatur qui quod odio dicta ipsum esse architecto. Eligendi.</p>
+              <a href="#" class="bro">Browser Galary</a>
             </div>
-        </section>
-    </main>
-    <!-- main-section started here  -->
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../Assignment/images/mountain-2.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block"  style="color: white; text-align: right;">
+              <h2>Lorem ipsum dolor sit.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti maxime et deserunt eaque <br> tenetur totam, odit ipsa sunt facere ex asperiores pariatur qui quod odio dicta ipsum esse architecto. Eligendi.</p>
+              <a href="#" class="bro">Browser Galary</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../Assignment/images/mountain-3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block" style="color: white; text-align: right;">
+              <h2>Mountain</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti maxime et deserunt eaque <br> tenetur totam, odit ipsa sunt facere ex asperiores pariatur qui quod odio dicta ipsum esse architecto. Eligendi.</p>
+              <a href="#" class="bro">Browser Galary</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- cards -->
+
+
+      <div class="display mt-5" >
+        <div class="card" style="width: 18rem;">
+            <img src="../Assignment/images/head-img1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Heading</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque ullam magnam atque ipsam numquam cum ducimus. Corrupti labore id</p>
+              <a href="#" class="btn btn-primary">View details</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../Assignment/images/head-img2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Heading</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque ullam magnam atque ipsam numquam cum ducimus. Corrupti labore id</p>
+              <a href="#" class="btn btn-primary">View details</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../Assignment/images/head-img3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Heading</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque ullam magnam atque ipsam numquam cum ducimus. Corrupti labore id</p>
+              <a href="#" class="btn btn-primary">View details</a>
+            </div>
+          </div>
+      </div>
+
+      <!-- container -->
+
+     
+
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-6 mt-5 pt-5">
+                <h1>First featurette heading. It'll blow your mind.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quaerat provident dicta velit cumque dolorem debitis ducimus quidem itaque laborum assumenda at a sed commodi, ipsum alias, nemo fuga laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus saepe nisi ullam laudantium repudiandae veritatis mollitia aspernatur, sapiente a ex voluptatem minus, odit temporibus praesentium sit error, assumenda facilis illo?</p>
+            </div>
+            <div class="col-6">
+                <img src="../Assignment/images/img1.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 mt-5">
+                <img src="../Assignment/images/img2.png" alt="">
+            </div>
+            <div class="col-6 mt-5 pt-5">
+                <h1>Oh yeah, it's that good. See for yourself</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quaerat provident dicta velit cumque dolorem debitis ducimus quidem itaque laborum assumenda at a sed commodi, ipsum alias, nemo fuga laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit cupiditate voluptate dignissimos ea perspiciatis eveniet vitae et magni ipsum repellendus odit consectetur atque nam praesentium saepe, quidem vero officiis. Cum!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 mt-5 pt-5">
+                <h1>And lastly, this one <br> Checkmate</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, quaerat provident dicta velit cumque dolorem debitis ducimus quidem itaque laborum assumenda at a sed commodi, ipsum alias, nemo fuga laboriosam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores enim a maxime in officiis architecto modi ex possimus earum vitae, ducimus reiciendis optio alias cupiditate quasi soluta voluptates! Alias, debitis?</p>
+            </div>
+            <div class="col-6 mt-5">
+                <img src="../Assignment/images/img3.png" alt="">
+            </div>
+        </div>
+      </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
